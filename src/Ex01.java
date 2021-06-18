@@ -9,7 +9,7 @@ public class Ex01 {
 		 * ou em ordem reversa.
 		 * */
 		
-		String atividades[] = new String[3];		
+		String atividades[] = new String[30];		
 		Scanner leitor = new Scanner(System.in);
 		int ordem;
 		

@@ -5,11 +5,11 @@ public class Vetores{
 	public static void main(String[] args) {
 		
 		Scanner leitor = new Scanner(System.in);
-		int qtde;
+		/*int qtde;
 		System.out.println("Digite a quantidade de alunos:");
-		qtde = leitor.nextInt();
+		qtde = leitor.nextInt();*/
 		
-		double alunos[] = new double[10];
+		double alunos[] = new double[30];
 		double total=0;
 
 		
