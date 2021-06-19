@@ -14,20 +14,39 @@ public class Ex02 {
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		double notas[] = new double[50];
-		String nomes[] = new String[50];
-		double media;
+		double notas[] = new double[3];
+		String nomes[] = new String[3];
+		double media=0;
 		
 		
 		//A. Digitar as 50 notas em um vetor e para cada nota digitada, digitar o nome do aluno em outro vetor
+		
 		for(int i=0; i<notas.length; i++) {
 			
 			System.out.println("Por favor digite o nome do aluno " + (i+1));
 			nomes[i] = leitor.next();
 			
-			System.out.println("Por favor digite a nota do aluno " + (i+1))
-			notas[i] = leitor.nextDouble();
-		
+			System.out.println("Por favor digite a nota do aluno " + (i+1));
+			notas[i] = leitor.nextDouble();	
 		}
+		
+		//B. Calcular a media das notas digitas
+		
+		for(int i=0; i<notas.length; i++) {
+			media = media + notas[i];
+		}
+		
+		media = media/notas.length;
+		System.out.println("A media da turma é: " + media);
+		
+		//C. Para Cada uma das notas que foi digitada e ficou abaixo da media, exibir um msg que diga " Chamar o aluno para conversar!"
+		
+		for(int i=0; i<notas.length; i++) {
+			if(notas[i] < media) {
+				System.out.println("O aluno  " + nomes[i] + " tirou nota " + notas[i] + " , e esta abaixo da media. Chamar para conversar ");
+			}
+		}
+		
 		leitor.close();
-
+	}
+}
